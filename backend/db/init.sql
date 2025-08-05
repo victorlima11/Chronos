@@ -6,6 +6,14 @@ CREATE TABLE IF NOT EXISTS usuarios (
   criado_em TIMESTAMP DEFAULT now()
 );
 
+CREATE TABLE IF NOT EXISTS planos (
+  id SERIAL PRIMARY KEY,
+  nome VARCHAR(50) NOT NULL,
+  preco_mensal DECIMAL(10, 2) NOT NULL,
+  descricao TEXT,
+  ativo BOOLEAN DEFAULT TRUE
+);
+
 CREATE TABLE IF NOT EXISTS empresas (
   id UUID PRIMARY KEY,
   nome VARCHAR(100) NOT NULL,
@@ -17,14 +25,6 @@ CREATE TABLE IF NOT EXISTS empresas (
   plano_id INTEGER REFERENCES planos(id),
   email VARCHAR(100) UNIQUE NOT NULL,
   criado_em TIMESTAMP DEFAULT now()
-);
-
-CREATE TABLE IF NOT EXISTS planos (
-  id SERIAL PRIMARY KEY,
-  nome VARCHAR(50) NOT NULL,
-  preco_mensal DECIMAL(10, 2) NOT NULL,
-  descricao TEXT,
-  ativo BOOLEAN DEFAULT TRUE
 );
 
 CREATE TABLE IF NOT EXISTS pagamentos (
