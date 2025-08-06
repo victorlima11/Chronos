@@ -1,4 +1,4 @@
-import { getUserByEmail } from '../services/usuarioService';
+import { getUserByEmail, createUser } from '../services/usuarioService';
 import { comparePassword } from '../utils/hash';
 import { generateToken } from '../utils/token';
 import { Request, Response } from 'express';
@@ -18,4 +18,15 @@ export async function login(req: Request, res: Response) {
 
     const token = generateToken({ id: usuario.id, email: usuario.email });
     return res.json({ usuario, token });
+}
+
+export async function register(req: Request, res: Response) {
+    const novoUsuario = req.body;
+    try {
+        const usuarioCriado = await createUser(novoUsuario);
+        const token = generateToken({ id: usuarioCriado.id, email: usuarioCriado.email });
+        return res.status(201).json({ usuario: usuarioCriado, token });
+    } catch (error) {
+        return res.status(400).json({ erro: error });
+    }
 }

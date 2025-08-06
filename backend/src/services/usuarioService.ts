@@ -3,6 +3,11 @@ import { NovoUsuario } from '../types/usuarioTypes';
 import { hashPassword } from '../utils/hash';
 
 export async function createUser(usuario: NovoUsuario) {
+    const exists = await UsuarioRepository.findUserByEmail(usuario.email);
+    if (exists) {
+        throw new Error('Usuário já cadastrado com este e-mail');
+    }
+
     const senhaHash = await hashPassword(usuario.senha);
     return UsuarioRepository.createUser({
         ...usuario,
