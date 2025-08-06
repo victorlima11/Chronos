@@ -1,3 +1,4 @@
+import { email } from 'zod';
 import { getUserByEmail, createUser } from '../services/usuarioService';
 import { comparePassword } from '../utils/hash';
 import { generateToken } from '../utils/token';
@@ -24,9 +25,9 @@ export async function register(req: Request, res: Response) {
     const novoUsuario = req.body;
     try {
         const usuarioCriado = await createUser(novoUsuario);
-        const token = generateToken({ id: usuarioCriado.id, email: usuarioCriado.email });
-        return res.status(201).json({ usuario: usuarioCriado, token });
-    } catch (error) {
-        return res.status(400).json({ erro: error });
+        const token = generateToken({ id: usuarioCriado.id, email: usuarioCriado.email })
+        return res.status(201).json({ usuario: {nome: usuarioCriado.nome, email: usuarioCriado.email}, token });
+    } catch (error: any) {
+        return res.status(400).json({ erro: error?.message });
     }
 }
