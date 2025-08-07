@@ -9,6 +9,8 @@ const router: Router = express.Router();
  * /api/login:
  *   post:
  *     summary: Faz login de um usuário
+ *     tags:
+ *      - Auth
  *     requestBody:
  *       required: true
  *       content:
@@ -37,6 +39,8 @@ router.post("/login", validateUserLogin, login);
  * /api/register:
  *   post:
  *     summary: Faz cadastro do usuário
+ *     tags:
+ *      - Auth
  *     requestBody:
  *       required: true
  *       content:
