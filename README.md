@@ -36,7 +36,7 @@ src/
  ├── services/        # Regras de negócio
  ├── tests/           # Testes automatizados
  ├── types/           # Tipagens globais e DTOs
- ├── app.ts           # Configuração da aplicação
+ ├── index.ts           # Configuração da aplicação
  └── server.ts        # Ponto de entrada
 ```
 
@@ -131,6 +131,7 @@ http://localhost:3000/api-docs
 * `npm run dev` → Rodar em dev com Nodemon
 * `npm run build` → Compilar TS para JS
 * `npm start` → Rodar em produção
+
 
 
 
