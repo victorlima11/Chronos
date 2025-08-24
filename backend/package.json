@@ -1,12 +1,14 @@
 {
-  "name": "agendei",
+  "name": "template",
   "version": "1.0.0",
   "description": "��#\u0000 \u0000C\u0000h\u0000r\u0000o\u0000n\u0000o\u0000s\u0000\r\u0000 \u0000#\u0000 \u0000C\u0000h\u0000r\u0000o\u0000n\u0000o\u0000s\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+    "build": "npx tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "node dist/index.js"
+    
   },
   "repository": {
     "type": "git",
