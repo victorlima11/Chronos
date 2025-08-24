@@ -106,15 +106,15 @@ http://localhost:3000/api-docs
 
 ### Auth
 
-* `POST /auth/register` → Criação de usuário
-* `POST /auth/login` → Login com JWT
+* `POST api/auth/register` → Criação de usuário
+* `POST api/auth/login` → Login com JWT
 
 ### Users
 
-* `GET /users` → Lista usuários
-* `GET /users/:id` → Busca usuário por ID
-* `PUT /users/:id` → Atualiza usuário
-* `DELETE /users/:id` → Remove usuário
+* `GET api/users` → Lista usuários
+* `GET api/users/:id` → Busca usuário por ID
+* `PUT api/users/:id` → Atualiza usuário
+* `DELETE api/users/:id` → Remove usuário
 
 ---
 
@@ -123,6 +123,7 @@ http://localhost:3000/api-docs
 * `npm run dev` → Rodar em dev com Nodemon
 * `npm run build` → Compilar TS para JS
 * `npm start` → Rodar em produção
+
 
 
 
