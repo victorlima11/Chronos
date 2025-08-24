@@ -5,18 +5,12 @@ Além disso, segue boas práticas de arquitetura, utilizando **Design Patterns**
 
 `config/`, `controller/`, `middleware/`, `repositories/`, `routes/`, `services/`, `tests/`, `types/`.
 
----
-
-## Badges
-
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=node.js\&logoColor=white)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge\&logo=typescript\&logoColor=white)](https://www.typescriptlang.org/)
 [![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge\&logo=express\&logoColor=white)](https://expressjs.com/)
 [![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge\&logo=jsonwebtokens\&logoColor=white)](https://jwt.io/)
 [![Bcrypt](https://img.shields.io/badge/Bcrypt-0F2D3C?style=for-the-badge)](https://www.npmjs.com/package/bcrypt)
 [![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge\&logo=swagger\&logoColor=white)](https://swagger.io/)
-
----
 
 ## Features
 
@@ -137,5 +131,6 @@ http://localhost:3000/api-docs
 * `npm run dev` → Rodar em dev com Nodemon
 * `npm run build` → Compilar TS para JS
 * `npm start` → Rodar em produção
+
 
 
