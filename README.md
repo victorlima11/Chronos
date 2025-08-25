@@ -124,6 +124,13 @@ http://localhost:3000/api-docs
 * `npm run build` → Compilar TS para JS
 * `npm start` → Rodar em produção
 
+---
+
+## Docker
+
+* `docker-compose up` → Subir docker-compose (db + api)
+
+
 
 
 
