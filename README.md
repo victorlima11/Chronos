@@ -11,6 +11,8 @@ Além disso, segue boas práticas de arquitetura, utilizando **Design Patterns**
 [![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge\&logo=jsonwebtokens\&logoColor=white)](https://jwt.io/)
 [![Bcrypt](https://img.shields.io/badge/Bcrypt-0F2D3C?style=for-the-badge)](https://www.npmjs.com/package/bcrypt)
 [![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge\&logo=swagger\&logoColor=white)](https://swagger.io/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+
 
 ## Features
 
@@ -129,6 +131,7 @@ http://localhost:3000/api-docs
 ## Docker
 
 * `docker-compose up` → Subir docker-compose (db + api)
+
 
 
 
